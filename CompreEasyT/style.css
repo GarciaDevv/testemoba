@@ -1,0 +1,279 @@
+
+@media (max-width: 930px) {
+
+
+
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(255, 90, 84, 1);
+
+  }
+
+  header {
+    display: flex;
+    flex-direction: column; /* Coloca logo e navegação em coluna */
+    align-items: center;
+    padding: 10px 5px;
+    background-color: rgba(255, 90, 84, 1);
+
+    width: 108%;
+  }
+
+  .logo img {
+    width: 100px; /* Define a largura da imagem para 100px */
+    height: auto; /* Mantém a proporção da altura automaticamente */
+    margin-right:60px;
+  }
+  
+
+  .navegacao{
+    margin-right: 60px; /* itens para esquerda */
+    
+  }
+
+  .navegacao ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none; /* Remove os marcadores padrão */
+    padding: 0;
+    margin: 0;
+    gap: 30px; /* Espaço de 20px entre os itens */
+
+    border: 2px solid #fdfdfd; /* Borda preta de 2px */
+    padding: 1px 10px; /* 5px no topo e embaixo, 10px nas laterais */
+  border-radius: 2px; /* Bordas arredondadas (opcional) */
+    
+  }
+
+
+
+  
+  .navegacao a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px; /* Aumenta a legibilidade */
+    font-family: "PT Sans Narrow", sans-serif;
+   
+  }
+
+  .star {
+    font-size: 26px;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bold;
+    font-family: "PT Sans Narrow", sans-serif;
+    color: white;
+  }
+
+  #produtos {
+    display: grid;
+    grid-template-columns: 1fr; /* Apenas uma coluna para blocos */
+    gap: 15px; /* Espaço entre os itens */
+    padding: 10px;
+    
+  }
+
+/* Reduz ainda mais o tamanho dos blocos */
+.produto {
+  width: 100px; /* Largura menor */
+  height: 150px; /* Altura fixa para limitar o tamanho */
+  background-color: white;
+  padding: 18px; /* Espaçamento interno reduzido */
+  border-radius: 20px; /* Bordas arredondadas leves */
+  text-align: center;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra discreta */
+
+  overflow: hidden; /* Garante que o conteúdo não extrapole os limites */
+}
+
+/* Ajusta imagens para caber nos blocos menores */
+.produto img {
+  width: 60px; /* Largura ainda menor */
+  height: 60px; /* Altura fixa para criar uniformidade */
+  margin-bottom: 5px; /* Espaçamento inferior */
+  object-fit: cover; /* Garante que as imagens preencham o espaço sem deformar */
+}
+
+/* Ajusta o título dos produtos */
+.produto h2 {
+  font-size: 14px; /* Texto menor para os títulos */
+  margin: 5px 0; /* Reduz espaço vertical */
+  line-height: 1.2; /* Ajusta a altura das linhas */
+}
+
+/* Ajusta a descrição dos produtos */
+.produto p {
+  font-size: 10px; /* Tamanho menor para descrições */
+  margin: 3px 0; /* Espaçamento menor */
+  line-height: 1.2; /* Altura de linha compacta */
+}
+
+/* Ajusta os botões */
+.produto button {
+  font-size: 10px; /* Tamanho reduzido */
+  padding: 6px 10px; /* Botão mais compacto */
+  border-radius: 80px; /* Bordas levemente arredondadas */
+  background-color:#db3a3c; /* Cor consistente */
+  cursor: pointer;
+  color:white;
+  border: none;
+}
+
+.produto button:hover {
+  background-color: rgb(89, 207, 89); /* Ajuste de cor ao passar o mouse */
+ 
+}
+
+/* Ajusta a grade de produtos */
+#produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exibe 3 produtos por linha */
+  gap: 8px; /* Espaçamento menor entre os produtos */
+  margin: 10px auto; /* Ajusta espaço em volta da grade */
+  padding: 10px;
+}
+
+
+
+
+}
+
+.navegacao :hover{
+
+  cursor: pointer;
+
+}
+
+.bntp{
+
+font-size: 90px;
+}
+
+
+
+.page-login{
+  background-color: rgba(255, 90, 84, 1);
+height: 100%;
+margin:0;
+
+
+}
+
+#login{
+display: flex;
+flex-direction: column;
+align-items: center; /* Centraliza tudo horizontalmente */
+height: 100vh;
+justify-content: center;
+
+
+
+}
+
+.caixa {
+background-color: #f9f9f9;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+display: flex;
+flex-direction: column;
+gap: 15px;
+border: 1px solid black;
+
+}
+
+
+input{
+border-color:black;
+padding: 5px;
+border-radius: 6px;
+
+
+}
+
+
+
+
+
+.imglogin {
+display: flex;
+justify-content: center;
+margin-bottom: 20px; /* Espaço entre a imagem e a caixa */
+}
+
+
+.imglogin img {
+height: auto;
+width: 100px;
+align-items: center;
+display: flex;
+justify-content: center;
+}
+
+input[type="submit"]{
+  background-color: rgba(255, 90, 84, 1);
+border-radius: 5px;
+border: none;
+width: 100px;
+align-items: center;
+justify-content: center;
+display: flex;
+gap: 15px;
+margin-left:20%; /* tentando centralizar o botao de login */
+
+
+
+
+
+}
+
+.tcarrinho h1{
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  font-family: "PT Sans Narrow", sans-serif;
+
+
+}
+
+
+#btnVoltar{
+  background-color: white;      /* Cor de fundo vermelha */
+  color: black;                   /* Cor do texto */
+  border: none;                   /* Remove a borda padrão */
+  padding: 8px 14px;             /* Espaçamento interno */
+  border-radius: 6px;             /* Bordas arredondadas */
+  font-size: 16px;                /* Tamanho da fonte */
+  cursor: pointer;               /* Muda o cursor ao passar */
+  transition: background-color 0.3s ease; /* Animação suave */
+margin-left: 70%;
+
+
+
+
+
+}
+
+#btnVoltar1{
+  background-color: white;      /* Cor de fundo vermelha */
+  color: black;                   /* Cor do texto */
+  border: none;                   /* Remove a borda padrão */
+  padding: 2px 14px;             /* Espaçamento interno */
+  border-radius: 6px;             /* Bordas arredondadas */
+  font-size: 16px;                /* Tamanho da fonte */
+  cursor: pointer;               /* Muda o cursor ao passar */
+  transition: background-color 0.3s ease; /* Animação suave */
+margin-left: 10%;
+font-family: "PT Sans Narrow",sans-serif;
+
+
+}
+
+.icone-carrinho-img {
+  width: 44px;
+  height: auto;
+  margin-top: 8px;
+}

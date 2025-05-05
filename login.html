@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body class="page-login">
+<div id="login">
+    <div class="imglogin">
+        <img src="img-gpt-icon-2-removebg-preview.png" alt="Logo">
+    </div>
+
+    <div class="caixa">
+        <div class="email">
+            <input type="email" id="email" placeholder="e-mail">
+        </div>
+
+        <div class="senha">
+            <input type="password" id="senha" placeholder="password">
+        </div>
+
+        <div class="entrar">
+            <input type="submit" value="Ir á Compra" id="btnLogin">
+        </div>
+    </div>
+</div>
+
+<script>
+    // Função chamada quando o botão de login é clicado
+    document.getElementById("btnLogin").addEventListener("click", function() {
+        // Obter os valores inseridos nos campos de email e senha
+        const email = document.getElementById("email").value;
+        const senha = document.getElementById("senha").value;
+
+        // Verificar se os campos não estão vazios
+        if (email && senha) {
+            // Aqui você pode adicionar uma verificação real de autenticação (exemplo abaixo é só uma simulação)
+            if (email === "usuario@exemplo.com" && senha === "senha123") {
+                // Se o login for bem-sucedido, armazenar no localStorage
+                localStorage.setItem("usuarioLogado", "true");
+                alert("Login bem-sucedido!");
+
+                // Redirecionar para a página inicial (ou página anterior)
+                window.location.href = "index.html";  // Aqui você pode mudar para qualquer página que deseje
+            } else {
+                alert("E-mail ou senha inválidos.");
+            }
+        } else {
+            alert("Por favor, preencha os campos de e-mail e senha.");
+        }
+    });
+</script>
+</body>
+</html>

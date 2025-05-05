@@ -1,0 +1,16 @@
+{
+    "name": "Compre Easy",
+    "short_name": "Easy",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "OIG3-removebg-preview.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
